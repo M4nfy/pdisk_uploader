@@ -8,12 +8,12 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-API_ID = environ.get('API_ID','6')
-API_HASH = environ.get('API_HASH','')
-BOT_TOKEN = environ.get('BOT_TOKEN','2091395468:AAFxBl2TEDkqyuyfPi_3SfUIkSiBN-Q52fE')
-PDISK_API_KEY = environ.get('PDISK_API_KEY'.'a24fa8429aaaf0aa13cb30f64d3457c0')
-THUMB_URL = environ.get('THUMB_URL', 'https://telegra.ph/file/1181d9119a13988dfe29c.jpg')
-CHANNEL = environ.get('CHANNEL','opop')
+API_ID = '1089935'
+API_HASH = '0dcc3ba0a6d8645cc404c4f6189b1840'
+BOT_TOKEN = '2091395468:AAFxBl2TEDkqyuyfPi_3SfUIkSiBN-Q52fE'
+PDISK_API_KEY = 'a24fa8429aaaf0aa13cb30f64d3457c0'
+THUMB_URL = 'https://telegra.ph/file/1181d9119a13988dfe29c.jpg'
+CHANNEL = 'opop'
 bot = Client('pdisk bot',
              api_id=API_ID,
              api_hash=API_HASH,
