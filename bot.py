@@ -12,8 +12,8 @@ API_ID = '1089935'
 API_HASH = '0dcc3ba0a6d8645cc404c4f6189b1840'
 BOT_TOKEN = '2091395468:AAFxBl2TEDkqyuyfPi_3SfUIkSiBN-Q52fE'
 PDISK_API_KEY = 'a24fa8429aaaf0aa13cb30f64d3457c0'
-THUMB_URL = 'https://telegra.ph/file/1181d9119a13988dfe29c.jpg'
-CHANNEL = 'opop'
+THUMB_URL = ' '
+CHANNEL = 'https://t.me/joinchat/6f2P1tq3-mliYmVl'
 bot = Client('pdisk bot',
              api_id=API_ID,
              api_hash=API_HASH,
@@ -91,7 +91,7 @@ async def pdisk_up(link):
     else:
         title_new = urlparse(link)
         title_new = os.path.basename(title_new.path)
-        title_pdisk = '@' + CHANNEL +' '+ title_new
+        title_pdisk = ' ' + CHANNEL +' '+ title_new
     res = requests.get(
         'http://linkapi.net/open/create_item?link_type=link&content_src=' + link + '&source=2000&cover_url='+THUMB_URL+'&api_key=' + PDISK_API_KEY + '&dir_id=0&title=' + title_pdisk + '&description=Join_' + CHANNEL + '_for_more_like_this')
     data = res.json()
@@ -146,10 +146,8 @@ async def remove_username(new_List):
 
 async def addFooter(str):
     footer = """
-━━━━━━━━━━━━━━━
-⚙️ How to Download / Watch Online or Change Audio : https://bit.ly/pdisk_tuts
-━━━━━━━━━━━━━━━
-⭐️JOIN CHANNEL ➡️ t.me/""" + CHANNEL
+    
+⭐️JOIN CHANNEL ➡️ + CHANNEL
     return str + footer
 
 bot.run()
