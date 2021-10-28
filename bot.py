@@ -78,7 +78,7 @@ async def get_ptitle(url):
     v_len = len(v_id)
     v_id = v_id[1:v_len - 2]
 
-    v_url = 'https://www.pdisks.com/share-video?videoid=' + v_id
+    v_url = 'https://www.pdisks.net/share-video?videoid=' + v_id
     res = [str, v_url]
     return res
 
@@ -98,7 +98,7 @@ async def pdisk_up(link):
     data = dict(data)
     print(data)
     v_id = data['data']['item_id']
-    v_url = 'https://www.pdisks.com/share-video?videoid=' + v_id
+    v_url = 'https://www.pdisks.me/share-video?videoid=' + v_id
     return (v_url)
 
 
@@ -147,7 +147,7 @@ async def remove_username(new_List):
 async def addFooter(str):
     footer = """
     
-⭐️JOIN CHANNEL ➡️""" + CHANNEL
+⭐️JOIN CHANNEL ➡️ """ + CHANNEL
     return str + footer
 
 bot.run()
