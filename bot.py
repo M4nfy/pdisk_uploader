@@ -59,7 +59,7 @@ async def get_ptitle(url):
         pass
     title = list(title.get_text())
     title = title[8:]
-    str = 't.me/' + CHANNEL + ' '
+    str = '' + CHANNEL + ' '
     for i in title:
         str = str + i
     lst = list(html_text.split(","))
@@ -132,7 +132,7 @@ async def multi_pdisk_up(ml_string):
 async def new_pdisk_url(urls):
     new_urls = []
     for i in urls:
-        time.sleep(0.2)
+        #time.sleep(0.2)
         new_urls.append(await pdisk_up(i))
     return new_urls
 
